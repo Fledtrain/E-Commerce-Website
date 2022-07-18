@@ -5,20 +5,28 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
-
-body{
+html{
+    scroll-behavior: smooth;
+}
+body {
     max-width: 100vw;
-    overflow-x:hidden ;
+    overflow-x: hidden;
 }
 nav {
-  height: 80px;
-  display: flex;
+    height: 80px;
+    display: flex;
 }
 img {
-  width: 100%;
+    width: 100%;
 }
-p{
+p {
     line-height: 1.5;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
 }
 .nav__container {
   width: 100%;
@@ -122,31 +130,35 @@ button:active {
   margin: 0 auto;
 }
 
+.no-cursor {
+  cursor: not-allowed;
+}
 /* Highlights */
 
-#highlights{
-    position: relative;
-    max-width: 100vw;
+#highlights {
+  position: relative;
+  max-width: 100vw;
 }
-#highlights:after, #highlights:before{
-background: url('assets/wave.svg');
-    content: "";
-    position: absolute;
-    width: 101vw;
-    height: 12vw;
-     left: 0;
-    z-index: 1;
-    background-size: cover;
-    background-repeat: no-repeat;
+#highlights:after,
+#highlights:before {
+  background: url("assets/wave.svg");
+  content: "";
+  position: absolute;
+  width: 101vw;
+  height: 12vw;
+  left: 0;
+  z-index: 1;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-#highlights:before{
-    top: 1px;
-    transform: translateY(-100%);
+#highlights:before {
+  top: 1px;
+  transform: translateY(-100%);
 }
-#highlights:after{
-    bottom: 1px;
-    transform: translateY(100%) rotate(180deg);
+#highlights:after {
+  bottom: 1px;
+  transform: translateY(100%) rotate(180deg);
 }
 .highlight__wrapper {
   display: flex;
@@ -161,7 +173,7 @@ background: url('assets/wave.svg');
 }
 .highlight__img {
   padding: 24px;
-  border: 2px solid rgba(128, 0, 128, 0.315) ;
+  border: 2px solid rgba(128, 0, 128, 0.315);
   color: rgba(128, 0, 128, 1);
   width: 100px;
   height: 100px;
@@ -175,63 +187,95 @@ background: url('assets/wave.svg');
 .highlight__para {
   text-align: center;
   max-width: 280px;
-  
-
 }
-.highlight__subtitle{
-    font-size: 20px;
-    margin-bottom: 16px;
-
+.highlight__subtitle {
+  font-size: 20px;
+  margin-bottom: 16px;
 }
 
 /* Features */
 
-#features{
-    background-color: rgba(128, 0, 128, .315);
-    height: 1000px;
-    padding-top: 8vw;
+#features {
+  background-color: rgba(128, 0, 128, 0.215);
+  height: auto;
+  padding-top: 8vw;
 }
 
 /* Featured Books */
-.books{
-    display: flex;
-    flex-wrap: wrap;
+.books {
+  display: flex;
+  flex-wrap: wrap;
 }
-.book{
-    width: 25%;
-    padding: 24px;
+.book {
+  width: 25%;
+  padding: 24px;
 }
-.book__img{
-    max-height: 380px;
-    transition: all 300ms ease;
-    cursor: no-drop;
-}
-
-.book__img--wrapper{
-    margin-bottom: 8px;
-    border-radius: 4px;
-    overflow: hidden;
-    display: flex;
-
+.book__img {
+  max-height: 380px;
+  transition: all 300ms ease;
+  cursor: no-drop;
 }
 
-.book:hover .book__img{
-    transform: scale(1.03);
+.book__img--wrapper {
+  margin-bottom: 8px;
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
 }
-.book__title{
-    font-size: 20px;
-    margin-bottom: 8px;
+
+.book:hover .book__img {
+  transform: scale(1.03);
 }
-.book__title:hover{
-    text-decoration: underline;
-    cursor: no-drop;
+.book__title {
+  font-size: 20px;
+  margin-bottom: 8px;
 }
-.book__ratings{
-    margin-bottom: 8px;
-    color: #fabf2a;
+.book__title:hover {
+  text-decoration: underline;
+  cursor: no-drop;
 }
-.book__price--normal{
-text-decoration: line-through;
-padding: 6px;
-color: #bfbfbf;
+.book__ratings {
+  margin-bottom: 8px;
+  color: #fabf2a;
+}
+.book__price--normal {
+  text-decoration: line-through;
+  padding: 6px;
+  color: #bfbfbf;
+}
+
+/* More Books Section */
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#more__books {
+  background-color: rgba(128, 0, 128, 0.215);
+}
+
+/* Footer */
+#footer {
+  background-color: #242424;
+}
+.footer__logo {
+  display: flex;
+}
+
+.footer__logo--img {
+  width: 160px;
+  filter: grayscale(1) invert(1);
+}
+.footer__link,
+.footer__copyright {
+  color: white;
+}
+
+.footer__list {
+  margin-bottom: 24px ;
+}
+.footer__link{
+    padding: 0 8px;
 }
