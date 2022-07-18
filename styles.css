@@ -195,6 +195,7 @@ background: url('assets/wave.svg');
 /* Featured Books */
 .books{
     display: flex;
+    flex-wrap: wrap;
 }
 .book{
     width: 25%;
