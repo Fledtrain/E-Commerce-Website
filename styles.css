@@ -95,6 +95,7 @@ li {
 .menu--open .menu__backdrop {
   visibility: visible;
   opacity: 1;
+  touch-action: none;
 }
 .menu--open {
   max-width: 100vh;
