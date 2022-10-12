@@ -333,6 +333,14 @@ button:active {
   padding: 0 8px;
 }
 
+@media(max-width:2000px)  {
+  header{
+    padding-top: 80px ;
+  }
+}
+
+
+
 /* Small Phones, Tablets, Large Smartphones */
 @media (max-width: 768px) {
   .header__description {
