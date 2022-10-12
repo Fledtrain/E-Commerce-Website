@@ -333,12 +333,12 @@ button:active {
   padding: 0 8px;
 }
 
-@media(max-width:2000px)  {
+/* For Ipad screen */
+@media(max-width:1200px)  {
   header{
     padding-top: 80px ;
   }
 }
-
 
 
 /* Small Phones, Tablets, Large Smartphones */
