@@ -334,12 +334,26 @@ button:active {
 }
 
 /* For Ipad screen */
-@media(max-width:1200px)  {
-  header{
+@media (max-width: 1200px) {
+  header {
     padding-top: 8vh;
   }
+  .header__description {
+    padding: 0 24px;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 32px;
+  }
+  button {
+    font-size: 18px;
+  }
+  .book {
+    width: 50%;
+  }
 }
-
 
 /* Small Phones, Tablets, Large Smartphones */
 @media (max-width: 768px) {
@@ -370,7 +384,7 @@ button:active {
   .highlight {
     width: 100%;
   }
-  .highlight:not(:last-child){
+  .highlight:not(:last-child) {
     margin-bottom: 24px;
   }
 }
