@@ -336,7 +336,7 @@ button:active {
 /* For Ipad screen */
 @media(max-width:1200px)  {
   header{
-    padding-top: 80px ;
+    padding-top: 8vh;
   }
 }
 
